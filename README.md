@@ -1,110 +1,148 @@
-## 1: Conditional Statements in Python: Even or Odd Checker
-
-## Aim:
-To write a Python program to check whether the given number is even or odd using if...else statements.
-
-## Algorithm:
-1.Get an input from the user.
-2.Convert the input to an integer and store it in a variable a.
-3.Use the modulo operator % to check if a % 2 == 0.
-4.If true, print "EVEN".
-5.Else, print "ODD".
-6.End the program.
-
-## Program:
-
-<img width="380" height="153" alt="{0B93CB4F-FDCE-4F3E-9F3A-6AA2CE440C90}" src="https://github.com/user-attachments/assets/4e67bec1-453f-4311-834b-d54355f7d715" />
-
-## Output:
-
-<img width="208" height="80" alt="{49D4AD7A-7B37-41CF-AEBD-3D7A90017CA5}" src="https://github.com/user-attachments/assets/e4ea6d45-8c9b-4604-bd69-cb94b7faccf2" />
-
-## Result:
-The program is executed successfully
-
-## 2 :Datatypes-Boolean Expression Evaluation in Python
-## Aim:
-To write a Python program that evaluates and prints the results of boolean and arithmetic expressions involving True and False.
-
-## Algorithm:
-
-1.Set variable a to the result of the expression 0 == True.
-2.Set variable b to the result of the expression False == False.
-3.Set variable c to the result of the expression True + True.
-4.Set variable d to the result of the expression False + 9.
-5.Print the value of a with the label "a is".
-6.Print the value of b with the label "b is".
-7.Print the value of c with the label "c:".
-8.Print the value of d with the label "d:".
-
-## Program:
-
-<img width="287" height="240" alt="{DCB789BC-5C81-40D1-9AD5-0938D4587C40}" src="https://github.com/user-attachments/assets/40d2a594-be60-47f4-b2ce-041b50806389" />
-
-## Output:
-
-<img width="224" height="210" alt="{6EF00C54-6D91-49E7-B04B-632CD7BB4ED1}" src="https://github.com/user-attachments/assets/2344b265-d2f8-4895-85f4-21291d8846b4" />
-
-## Result:
-The execution of the program was successfully done
-
-## 3: Datatypes-Character Literal in Python
+## Built-in Functions -Binary Conversion Using Built-in Functions in Python
 ## Aim
-To write a Python program that prints the characters 'T' and 'a' using character literals.
+To write a Python program to convert the number 16 into its binary representation using built-in Python functions.
 
 ## Algorithm
-Print the character 'T'.
-Print the character 'a'.
+1.Assign the value 16 to a variable a.
+2.Use the built-in bin() function to convert the number to binary.
+3.Print the result.
 
 ## Program
+```
+x=16
+y=bin(x)
+print(y)
+```
+## Output
 
-<img width="182" height="90" alt="{078F4E4C-4CA4-43DC-BED6-D3FA08C72EA2}" src="https://github.com/user-attachments/assets/3db57fe4-49c6-48c0-a9b8-d73f2d801401" />
+<img width="395" height="330" alt="{BE2A80D4-BFB2-4F6E-AE33-FD6478021F6D}" src="https://github.com/user-attachments/assets/a60e69e1-51f8-4912-8ddb-c8fbcfd0a7a4" />
+## Result
 
-## Output:
+Thus,the Python program to convert the number 16 into its binary representation using built-in Python functions is created successfully.
 
-<img width="253" height="178" alt="{15A5C373-4335-468B-97A3-35EDB9DC2BBC}" src="https://github.com/user-attachments/assets/d1204a08-0e1b-49cd-b32e-337f0e8cc25b" />
-
-## Result:
-The execution of the program was successfully done
-
-## 4: Datatypes-Complex Number Creation in Python
+## Functions in Python: Modulo Calculator
 ## Aim
-To write a Python program that reads two integers, creates a complex number using them, and then prints the complex number along with its real and imaginary parts.
+To write a Python program that defines a function which accepts two values and returns their modulo using the % operator.
 
 ## Algorithm
-1.Read an integer input from the user and assign it to the variable a (real part).
-2.Read another integer input from the user and assign it to the variable b (imaginary part).
-3.Create a complex number x using the complex(a, b) function.
-4.Print the complex number x.
-5.Print the real part of x using x.real.
-6.Print the imaginary part of x using x.imag.
 
+1.Define a function called result that takes two arguments a and b.
+2.Inside the function, compute the modulo using a % b.
+3.Print the result of the modulo operation.
+4.Get two integer inputs from the user.
+5.Call the result function with the user-provided values.
 ## Program
+```
+def result(a, b):
+    modulo_value = a % b
+    return modulo_value
 
-<img width="461" height="170" alt="{E2642AB7-6B9C-41CC-ABAF-A0EAFC35C546}" src="https://github.com/user-attachments/assets/1d4bf167-8f98-4d52-800d-361d7eebfbee" />
-
+a=int(input())
+b=int(input())
+print("modulo is", result(a, b))
+```
 ## Output:
 
-<img width="459" height="197" alt="{A28BAED0-FA48-4757-8063-73D8BF9A9D65}" src="https://github.com/user-attachments/assets/47b94e19-5c53-4917-8984-f8a77f513305" />
+<img width="692" height="337" alt="{A6974950-6A0A-446E-B207-E8BA0772BCED}" src="https://github.com/user-attachments/assets/5f86578b-2fa9-46d9-8d81-3200e29cb4f0" />
 
 ## Result
-The execution of the program was successfully done
+Thus,the Python program that defines a function which accepts two values and returns their modulo using the % operator is created successfully.
 
-## 5: Datatypes-Read and Print a String in Python
+## Lambda Function in Python: Addition of Two Numbers
 ## Aim
-To write a Python program to read a string from the user and then print it.
+To write a Python program that defines a lambda function which takes two arguments a and b, and returns their sum.
 
 ## Algorithm
-Assign a variable named men_stepped_on_the_moon.
-Use input() to read a string from the user and store it in the variable.
-Print the value stored in the variable.
+Get two integer inputs from the user.
+Use a lambda function to define a function f that returns a + b.
+Call the function with the user inputs and print the result.
 ## Program
 
-<img width="687" height="111" alt="{01C10D18-D792-4C21-A392-0402A2BFADF3}" src="https://github.com/user-attachments/assets/b614892d-0f3e-48ab-aa1d-74c1c0ef71fb" />
+```
+i=int(input())
+j=int(input())
+z=int(input())
 
-## Output:
+f = lambda a, b,c: a+b+c
 
-<img width="403" height="115" alt="{50325785-06CE-48FF-B318-6C74433CDDE4}" src="https://github.com/user-attachments/assets/549b6f8e-9de3-4d4e-b653-1231338816f0" />
+print(f(i, j,z))
+```
+## Output
+
+<img width="538" height="409" alt="{5A575DA1-485D-49D2-9D76-4F63310A07B4}" src="https://github.com/user-attachments/assets/5cbd6452-833b-4dd9-971b-0b48c8d1023f" />
+## Result
+Thus,the Python program that defines a lambda function which takes two arguments a and b, and returns their sum is created successfully.
+
+## Looping(Patterns)-Pascal's Triangle Generator in Python
+This project demonstrates a simple Python program to generate Pascal’s Triangle, where the number of rows is provided by the user.
+
+## Aim
+To write a Python program that generates Pascal's Triangle using numbers. The number of rows is accepted from the user.
+
+## Algorithm
+
+Start the program.
+Input the number of rows from the user.
+Loop from 0 to the number of rows.
+For each row:
+Print appropriate spaces to shape the triangle.
+Compute values using the formula:
+[ C(n, k) = \frac{n!}{k!(n-k)!} ]
+Print all rows of Pascal’s Triangle.
+End the program.
+## Program
+```
+rows = int(input())
+coef = 1
+
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
+    print()
+```
+## Output
+
+<img width="656" height="738" alt="{4B6E7EAC-3F5A-40F8-9C27-9A8BE6496148}" src="https://github.com/user-attachments/assets/2171b217-56fc-4ccd-ae53-d442a810460d" />
+## Result
+Thus,the Python program that generates Pascal's Triangle using numbers. The number of rows is accepted from the user is created successfully.
+
+## Loops in Python: Palindrome Number Checker
+## Aim
+To write a Python program that checks whether a given number is a palindrome using loops.
+
+## Algorithm
+Get input from the user and assign it to a variable num.
+Assign the value of num to a temporary variable temp.
+Initialize a variable rev to 0 (used to store the reversed number).
+Use a while loop to reverse the digits:
+While temp > 0:
+rev = (10 * rev) + temp % 10
+temp = temp // 10
+After the loop, compare rev with num:
+If equal, print that the number is a palindrome.
+Else, print that it is not a palindrome.
+## Program
+```
+num=int(input())
+rev=0
+temp=num
+while temp>0:
+    rev=(10*rev)+temp%10
+    temp//=10
+if rev==num:
+    print("The given number {} is a Palindrome".format(num))
+else:
+    print("The given number {} is not a palindrome".format(num))
+```
+## Output
+
+<img width="1032" height="278" alt="{0AE7CE82-9138-4D7B-8FDF-BC946B4E7793}" src="https://github.com/user-attachments/assets/6e4fa9ff-0b24-43b2-b976-11f36d6f7718" />
 
 ## Result
-The execution of the program was successfully done
+Thus,the Python program that checks whether a given number is a palindrome using loops is created successfully.
